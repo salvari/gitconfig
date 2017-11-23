@@ -34,5 +34,5 @@ Configuración de git
 
 ## Por proyecto
 
-git config http.proxy "usernm:pass@ipProxy:port"
+    git config http.proxy "usernm:pass@ipProxy:port"
 
