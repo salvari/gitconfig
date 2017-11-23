@@ -5,7 +5,7 @@ Configuración de git
 
 ### General
 
-    git config --global ui.color true
+    git config --global ui.color auto
     git config --global user.name "Pepito Pérez"
     git config --global user.mail "pperez@mikasa.com"
 
