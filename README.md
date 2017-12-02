@@ -7,7 +7,7 @@ Configuración de git
 
     git config --global ui.color auto
     git config --global user.name "Pepito Pérez"
-    git config --global user.mail "pperez@mikasa.com"
+    git config --global user.email "pperez@mikasa.com"
 
 ### Alias
 
@@ -34,5 +34,5 @@ Configuración de git
 
 ## Por proyecto
 
-    git config http.proxy "usernm:pass@ipProxy:port"
+    git config http.proxy "http://usernm:pass@ipProxy:port"
 
