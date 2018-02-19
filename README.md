@@ -23,6 +23,7 @@ Configuración de git
 
     git config --global alias.ci commit
     git config --global alias.ca "commit -a"
+    git config --global alias.cam "commit -a -m "
 
     git config --global alias.ri "rebase -i"
     git config --global alias.ria "rebase -i --autosquash"
