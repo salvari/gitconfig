@@ -16,7 +16,8 @@ Configuración de git
     git config --global alias.st "status -sb"
     git config --global alias.last "log -1 --stat"
     git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all"
-    git config --global alias.dc "diff --cached"
+    git config --global alias.dc "diff --cached"    
+    git config --global alias.so "show --pretty='parent %Cred%p%Creset commit %Cred%h%Creset%C(yellow)%d%Creset%n%n%w(72,2,2)%s%n%n%w(72,0,0)%C(cyan)%an%Creset %Cgreen%ar%Creset'
 
     git config --global alias.unstage "reset HEAD --"
 
