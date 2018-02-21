@@ -104,3 +104,12 @@ resumen. En general es mejor documentar el "por qué" y no el "cómo".
     git add -p
 
     git add -i
+
+## whitespaces
+
+    git diff --check
+
+    git config --global core.whitespace "blank-at-eol,blank-at-eof,tab-in-indent"
+
+    git rebase HEAD~2 --whitespace=fix
+
