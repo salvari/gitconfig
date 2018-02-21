@@ -113,3 +113,12 @@ resumen. En general es mejor documentar el "por qué" y no el "cómo".
 
     git rebase HEAD~2 --whitespace=fix
 
+## stash
+
+    git stash save --keep-index --include-untracked "WIP"
+
+    git stash list
+
+    git stash apply
+
+    git stash pop
