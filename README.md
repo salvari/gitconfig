@@ -83,7 +83,7 @@ Configuración de git
 
 * __A__tomic
 * __C__onsistent
-* __I__ncrementa
+* __I__ncremental
 * __D__ocumented
 
 __Atómico__ significa que es autocontenido y coherente, cambios
