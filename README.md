@@ -122,3 +122,45 @@ resumen. En general es mejor documentar el "por qué" y no el "cómo".
     git stash apply
 
     git stash pop
+
+# ssh
+
+Verificar tus claves existentes:
+
+    ls -la ~/.ssh
+    
+También podemos comprobar que claves hemos añadido ya a nuestro agente ssh con:
+
+    ssh-add -l
+
+Para generar una nueva pareja de claves ssh:
+
+    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+
+Podremos dar un nombre distintivo a los ficheros de claves generados y
+poner una contraseña adecuada a la clave. Si algún dia queremos
+cambiar la contraseña:
+
+    ssh-keygen -p
+
+Añadimos nuestra clave al `ssh-agent`
+
+    ssh-add ~/.ssh/id_rsa
+    
+Ahora tenemos que añadir nuestra clave ssh en nuestra cuenta de github,
+para ello editamos con nuestro editor de texto favorito el fichero
+`~/.ssh/id_rsa.pub` y copiamos el contenido integro. Después pegamos ese
+contenido en el cuadro de texto de la web de github.
+
+Para comprobar que las claves instaladas en github funcionan
+correctamente:
+
+    ssh -T git@github.com
+    Hi salvari! You've successfully authenticated, but GitHub does not provide shell access.
+
+Este mensaje indica que todo ha ido bien.
+
+Ahora en los repos donde queramos usar ssh debemos cambiar el remote:
+
+    git remote set-url origin git@github.com:$USER/$REPONAME.git
